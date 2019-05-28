@@ -1,0 +1,40 @@
+<div clas="container">
+<h3>Items</h3>
+  <%= link_to 'New Item', new_item_path, class: "btn btn-info btn-sm" %>
+</div>
+<br/>
+<div class="container">
+<div class="table-wrapper-scroll-y my-custom-scrollbar">
+ <table class="table table-bordered table-hover mb-0" >
+    <thead>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Item name</th>
+        <th scope="col">Item brand</th>
+        <th scope="col">Item model number</th>
+        <th scope="col">Item purchase date</th>
+        <th scope="col">Current holder</th>
+        <th scope="col">Previous holder</th>
+        <th scope="col" colspan="3">Modification</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @items.each do |item| %>
+        <tr>
+          <td><%= item.item_id %></td>
+          <td><%= item.item_name %></td>
+          <td><%= item.item_brand %></td>
+          <td><%= item.item_model_number %></td>
+          <td><%= item.item_purchase_date %></td>
+          <td><%= item.present_holder_id %></td>
+          <td><%= item.previous_holder_id %></td>
+          <td><%= link_to 'Show', item, class: "btn btn-info btn-sm" %></td>
+          <td><%= link_to 'Edit', edit_item_path(item),class: "btn btn-success btn-sm" %></td>
+          <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' },class: "btn btn-danger btn-sm" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+</div>

@@ -1,0 +1,17 @@
+<div class="controller">
+  <%= simple_form_for @item do |f| %>
+  <div class="form-inputs justify-content-center col-sm-10">
+    <%= f.input :item_id %><br/>
+    <%= f.input :item_name %><br/>
+    <%= f.input :item_brand %><br/>
+    <%= f.input :item_model_number %><br/>
+    <%= f.input :item_purchase_date %><br/>
+    <%= f.input :present_holder_id %><br/>
+    <%= f.input :previous_holder_id %><br/>
+  </div>
+  <br/>
+      <div>
+        <%= f.button :submit, class: "btn btn-primary btn-sm" %>
+      </div>
+  <% end %>
+</div>

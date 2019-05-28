@@ -1,0 +1,19 @@
+<div class="container">
+  <strong>Pid:</strong>
+  <%= @previousholder.employee_id %><br>
+  <strong>From date:</strong>
+  <%= @previousholder.from_date %><br>
+  <strong>To date:</strong>
+  <%= @previousholder.to_date %><br>
+  <strong>Remark:</strong>
+  <%= @previousholder.remark %><br>
+  <strong>Item Id:</strong>
+  <%= @previousholder.item_id %><br>
+</div>
+<br>
+<hr>
+<div>
+<%= link_to 'Edit', edit_previousholder_path(@previousholder), class: 'btn btn-success btn-sm' %> |
+<%= link_to 'Back', previousholders_path, class: "btn btn-success btn-sm" %>
+</div>
+</hr>

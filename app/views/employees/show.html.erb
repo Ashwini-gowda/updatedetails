@@ -1,0 +1,18 @@
+<div class="container">
+  <strong>Eid:</strong>
+  <%= @employee.eid %><br/>
+  <strong>Name:</strong>
+  <%= @employee.name %><br/>
+  <strong>Gender:</strong>
+  <%= @employee.gender %><br/>
+  <strong>Joining date:</strong>
+  <%= @employee.joining_date %><br/>
+  <strong>Phone number:</strong>
+  <%= @employee.phone_number %><br/>
+</div>
+<hr><br/>
+<div>
+<%= link_to 'Edit', edit_employee_path(@employee), class: 'btn btn-success btn-sm' %> |
+<%= link_to 'List Employees', employees_path, class: "btn btn-success btn-sm" %>
+</div>
+</hr>

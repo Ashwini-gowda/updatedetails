@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pid: 1
+  from_date: 2019-05-28 09:44:58
+  to_date: 2019-05-28 09:44:58
+  remark: MyText
+  item_id: MyString
+
+two:
+  pid: 1
+  from_date: 2019-05-28 09:44:58
+  to_date: 2019-05-28 09:44:58
+  remark: MyText
+  item_id: MyString

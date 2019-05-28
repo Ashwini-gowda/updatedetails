@@ -1,0 +1,15 @@
+<div class="controller">
+  <%= simple_form_for @employee do |f| %>
+    <div class="form-inputs justify-content-center col-sm-10">
+      <%= f.input :eid %><br/>
+      <%= f.input :name %><br/>
+      <%= f.input :gender %><br/>
+      <%= f.input :joining_date %><br/>
+      <%= f.input :phone_number %><br/>
+  </div>
+  <br/>
+  <div>
+      <%= f.button :submit, class: "btn btn-primary btn-sm" %>
+    </div>
+  <% end %>
+</div>

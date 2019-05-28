@@ -1,0 +1,30 @@
+<div class="container">
+  <strong>Item Id:</strong>
+  <%= @item.item_id %><br>
+  <strong>Item name:</strong>
+  <%= @item.item_name %><br>
+  <strong>Item brand:</strong>
+  <%= @item.item_brand %><br>
+  <strong>Item model number:</strong>
+  <%= @item.item_model_number %><br>
+  <strong>Item purchase date:</strong>
+  <%= @item.item_purchase_date %><br>
+</div>
+<hr>
+  <div>
+    <% @item.previousholders.each do |previousholder| %> 
+      <strong>Previous Holder Name</strong>
+      <%= previousholder.employee.name %><br>
+      <strong>Remark of the item</strong>
+      <%= previousholder.remark %><br>
+      <strong>From Date </strong>
+      <%= previousholder.from_date %><br>
+      <strong>To date</strong>
+      <%= previousholder.to_date%><br>
+    <% end %>
+  </div>
+</hr>
+<hr>
+  <%= link_to 'Edit', edit_item_path(@item), class: "btn btn-success btn-sm" %>
+  <%= link_to 'List Items', items_path, class: "btn btn-primary btn-sm" %>
+</hr>

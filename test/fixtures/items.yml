@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  item_id: 1
+  item_name: MyString
+  item_brand: MyString
+  item_model_number: 1
+  item_purchase_date: 2019-05-28
+  current_holder_id: 1
+  previous_holder_id: 1
+
+two:
+  item_id: 1
+  item_name: MyString
+  item_brand: MyString
+  item_model_number: 1
+  item_purchase_date: 2019-05-28
+  current_holder_id: 1
+  previous_holder_id: 1
